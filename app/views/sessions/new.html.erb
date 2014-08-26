@@ -1,0 +1,19 @@
+<h1>Sign in</h1>
+<p>Find me in app/views/sessions/new.html.erb</p>
+
+<div class="row">
+  <div class="span6 offset3">
+    <%= form_for(:session, url: sessions_path) do |f| %>
+      <%= f.label :server %>
+      <%= f.text_field :server %>
+
+      <%= f.label :user %>
+      <%= f.text_field :user %>
+
+      <%= f.label :password %>
+      <%= f.password_field :password %>
+
+      <%= f.submit "Sign in", class: "btn btn-large btn-primary" %>
+    <% end %>
+  </div>
+</div>
